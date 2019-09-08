@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/goodsDetails.css">
+</head>
+
+<body>
+    <div id="goodsDetails" class="clearfix">
+        <div class="gome-top" style="width: 1200px; margin: auto;">
+            <div id="gome-top-body" class="wbox">
+                <ul>
+                    <li id="gome-entry-link">
+                        <a href="">
+                            <i class="icon-gome-logo"></i>国美首页
+                        </a>
+                    </li>
+                    <li class="gome-spacer"></li>
+                    <li id="gome-user" class="">
+                        <b id="loginDiv-name">
+                            <a href="">国美会员</a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <div id="user-name">
+                                <i></i>
+                                <div>
+                                    <p class="user-name-login">欢迎来到国美，
+                                        <a href="">请登录！</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="user-icon">
+                                <p>
+                                    <a href="">会员俱乐部</a>我的
+                                    <span></span>特权
+                                </p>
+                                <a class="user-icon-prev"></a>
+                                <a class="user-icon-next"></a>
+                                <div id="box" style="display: none;">
+                                    <ul
+                                        style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 720px; left: 0px;">
+                                        <li data-icon="jfcj"
+                                            style="overflow: hidden; float: left; width: 80px; height: 70px;">
+                                            <a href="">
+                                                <i class="gm-icon"></i>美豆抽奖
+                                            </a>
+                                        </li>
+                                        <li style="overflow: hidden; float: left; width: 80px; height: 70px;">
+                                            <a href="">
+                                                <i class="gm-icon"></i>退换货保障</a>
+                                        </li>
+                                        <li style="overflow: hidden; float: left; width: 80px; height: 70px;">
+                                            <a href="">
+                                                <i class="gm-icon"></i>价格保护
+                                            </a>
+                                        </li>
+                                        <li style="overflow: hidden; float: left; width: 80px; height: 70px;">
+                                            <a href="">
+                                                <i class="gm-icon">@</i>消费得美豆
+                                            </a>
+                                        </li>
+                                        <li style="overflow: hidden; float: left; width: 80px; height: 70px;">
+                                            <a href="">
+                                                <i class="gm-icon"></i>专属阶梯价
+                                            </a>
+                                        </li>
+                                        <li style="overflow: hidden; float: left; width: 80px; height: 70px;">
+                                            <a href="">
+                                                <i class="gm-icon"></i>生日礼包
+                                            </a>
+                                        </li>
+                                        <li style="overflow: hidden; float: left; width: 80px; height: 70px;">
+                                            <a href="">
+                                                <i class="gm-icon"></i>更多精彩
+                                            </a>
+                                        </li>
+                                        <li style="overflow: hidden; float: left; width: 80px; height: 70px;">
+                                            <a href=""></a>
+                                        </li>
+                                        <a href=""></a>
+                                        <li style="overflow: hidden; float: left; width: 80px; height: 70px;">
+                                            <a href=""></a>
+                                            <a href=""></a>
+                                        </li>
+                                        <a href=""></a>
+                                    </ul>
+                                    <a href=""></a>
+                                </div>
+                                <a href=""></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="loginDiv-link" class="gome-link">
+                        <a href="login.html">登录</a>
+                        <a class="gome-link-register" href="">注册有礼<i></i></a>
+                    </li>
+                </ul>
+                <ul id="gome-top-right">
+                    <li class="gome-link">
+                        <a href="">我的订单</a>
+                    </li>
+                    <li id="gome-mygome" data-load="mygome">
+                        <b>
+                            <a href="">我的国美</a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <strong>我的国美，
+                                <a href="">请登录！</a>
+                            </strong>
+                            <ul id="mygome-order">
+                                <li>
+                                    <a href="">待处理订单</a>
+                                    <ins id="waitPay"></ins>
+                                </li>
+                                <li>
+                                    <a href="">我的收藏</a>
+                                </li>
+                                <li>
+                                    <a href="">个人资料</a>
+                                </li>
+                                <li><a href="">我的美店</a></li>
+                            </ul>
+                            <ul id="mygome-coupon">
+                                <li>
+                                    <a data-code="public01061" href="k">我的优惠券</a>
+                                    <ins id="twMyCoupon">-</ins>
+                                </li>
+                            </ul>
+                            <p>足迹</p>
+                            <ul id="mygome-track">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gome-spacer"></li>
+                    <li id="gome-enterprise" class="drop">
+                        <b><a href="">企业采购</a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <a class="gome-qrcode" href=""></a>
+                        </div>
+                    </li>
+                    <li id="gome-service" class="drop">
+                        <b>
+                            <em class="gm-icon"></em>
+                            <a href="">服务中心</a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <p>
+                                <a href="">用户服务</a>
+                            </p>
+                            <ul>
+                                <li><a href="">售后服务</a></li>
+                                <li><a href="">帮助服务</a></li>
+                                <li><a href="">新手指南</a></li>
+                                <li><a href="">客服服务</a></li>
+                                <li><a href="">用户注销</a></li>
+                            </ul>
+                            <p><a href="">商家服务</a></p>
+                            <ul>
+                                <li><a href="">商家入驻</a></li>
+                                <li><a href="">商家登录</a></li>
+                                <li><a href="">广告平台</a></li>
+                                <li><a href="">平台规则</a></li>
+                                <li><a href="">商家培训</a></li>
+                            </ul>
+                            <a class="live800-service">
+                                <em class="gm-icon"></em>在线客服
+                            </a>
+                            <span>
+                                <em></em>4008-708-708<ins>(9:00-21:00)</ins>
+                            </span>
+                        </div>
+                    </li>
+                    <li id="gome-sitemap" class="drop">
+                        <b><a href="">网站导航</a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <dl class="none">
+                                <dt>主题促销</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="">真划算</a>
+                                        </li>
+                                        <li><a href="">抢购</a></li>
+                                        <li><a href="">美家致选</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">家电城</a></li>
+                                        <li><a href="">服饰城</a></li>
+                                        <li><a href="">国美超市</a></li>
+                                        <li><a href="">品牌街</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">智能</a>
+                                        </li>
+                                        <li><a href="">今日特卖</a><i class="hot"></i></li>
+                                        <li><a href="">新品抢先</a>
+                                        </li>
+                                        <li><a href="">家居家装</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>特色分类</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="">电视影音</a></li>
+                                        <li><a href="">冰洗</a></li>
+                                        <li><a href="">洗衣机</a>
+                                        </li>
+                                        <li><a href="">空调</a></li>
+                                        <li><a href="">厨卫生活</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">手机</a>
+                                        </li>
+                                        <li><a href="">数码</a>
+                                        </li>
+                                        <li><a href="">电脑办公</a></li>
+                                        <li><a href="">精品配件</a></li>
+                                        <li><a href="">汽车</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="">住宅家具</a>
+                                        </li>
+                                        <li>
+                                            <a href="">家装建材</a>
+                                        </li>
+                                        <li>
+                                            <a href="">家居日用</a>
+                                        </li>
+                                        <li><a href="">床品家纺</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">服饰鞋帽</a></li>
+                                        <li><a href="">运动户外</a></li>
+                                        <li><a href="">箱包奢品</a></li>
+                                        <li><a href="">钟表首饰</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">食品酒水</a></li>
+                                        <li><a href="">母婴玩具</a>
+                                        </li>
+                                        <li><a href="">美妆个护</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>便捷服务</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="">话费充值</a></li>
+                                        <li><a href="">美店</a>
+                                            <i class="new"></i>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="">流量充值</a></li>
+                                        <li><a href="">上门服务</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>更多热点</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="">商家入驻</a></li>
+                                        <li><a href="">企业采购</a>
+                                            <i class="hot"></i>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>国美旗下</dt>
+                                <dd>
+                                    <ul>
+                                        <li><a href="">国美管家</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="gome-spacer"></li>
+                    <li id="gome-phone" class="drop">
+                        <b>
+                            <em class="gm-icon"></em>
+                            <a href="">手机国美</a>
+                            <i></i>
+                        </b>
+                        <div class="public-dropdown">
+                            <a class="gome-qrcode" href=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="gome-head  ">
+            <div><a class="logo" href="#"></a></div>
+            <a class="imggif" href="#"><img src="../img/捕获logogou.PNG" style="margin-top: -8px;" /></a>
+            <div class="searchbox">
+                <div class="search">
+                    <form action="#">
+                        <div class="searchdown">
+                            <span>商品 <i class="i2"></i></span>
+                            <ul class="search-type-list">
+                                <li class="search-type-item" data-selector="goods">商品</li>
+                                <li class="search-type-item" data-selector="shop">店铺</li>
+                                <li class="search-type-item" data-selector="topic">话题</li>
+                                <li class="search-type-item" data-selector="group">圈子</li>
+                            </ul>
+                        </div>
+                        <input class="tex" type="text" placeholder="洗衣机" />
+                        <button>搜索</button>
+                        <b></b>
+                    </form>
+                </div>
+                <div>
+                    <p class="sertex">
+                        <a href="#">空调返300</a><a href="#">荣耀超品日</a><a href="#">冰箱减800</a>
+                        <a href="#">游戏本</a><a href="#">彩电返卷</a><a href="#">家电39元</a>
+                        <a href="#">厨房卫浴</a><a href="#">低至五折</a>
+                    </p>
+                </div>
+            </div>
+            <div class="shop">
+                <i></i>
+                <p><span><a href="cart.html">我的购物车</a></span> <b></b></p>
+                <div class="hideshop">
+                    <h3><a href="#">购物车</a>中没有商品，请继续选购吧！</h3>
+                </div>
+            </div>
+        </div>
+        <!-- 主体 -->
+        <div class="goodBox" id="goodBox_in">
+            <!-- <div class="container">
+                <div class="deal_main clearfix">
+                    <div class="deal_lt clearfix">
+                        <div id="MagnifierWrap">
+                            <div class="MagnifierMain">
+                                <img class="MagTargetImg" src="../img/goodsDetails_img1.jpg">
+                            </div>
+                            <div class="MagnifierPop">
+                                <div class="MagnifierImg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="share">
+                            <a href="">分享到 ></a>
+                        </div>
+                    </div>
+                    <div class="deal_rt">
+                        <div class="pro_title clearfix">
+                            <div class="title_value">
+                                <p class="chn_title">
+                                    范思哲晶钻女用香水50ml
+                                </p>
+                                <p class="for_title">
+                                    Bright Crystal EDT 50ml
+                                </p>
+                            </div>
+                            <div class="flag_box_main clearfix">
+                                <img class="brand_pic" src="../img/GD_brand_1.jpg" alt="">
+                                <ul>
+                                    <li class="deal_en">Italy</li>
+                                    <li class="area_code_b">意大利品牌</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="in_hd">
+                            <p class="introduce_cd">
+                                范思哲（Versace）晶钻女用香水（又名女士香水）50ml！清新独特的性感香调，诱人的花果香氛，粉红水晶般的材质，钻石切割般的璀璨瓶身，绚丽光芒难以掩藏！充盈的香氛，令整款香水充满了浪漫的气息，让你静谧的享受属于自己的浪漫时刻！
+                            </p>
+                        </div>
+                        <div class="price_module">
+                            <ul>
+                                <li class="jm_p">
+                                    <em>￥</em>
+                                    <span class="jumei_price">289</span>
+                                </li>
+                                <li class="mk_p">
+                                    参考价
+                                    <em>￥</em>
+                                    <span class="market_price">625</span>
+                                </li>
+                                <li class="rule_price">
+                                    <span class="rmb_tax">价格详情 ></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mail_policy">
+                            <dl>
+                                <dt>服务政策：</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>包邮政策：</dt>
+                                <dd>本商品满299元或2件包邮（新疆部分区域除外）</dd>
+                            </dl>
+                        </div>
+                        <dl class="clearfix shopping_special">
+                            <dt class="spacing">
+                                <span>型</span>号：
+                            </dt>
+                            <dd>
+                                <a href="javascript:;">50ml</a>
+                            </dd>
+                        </dl>
+                        <div class="mall_btn" id="mall_btn">
+                            <div id="shop_cart" href="">
+                                <span>加入购物车</span>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="buynum">
+                            月销
+                            <span class="num_red">1165</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal_prefer clearfix" id="deal_prefer">
+                    <div class="list rightborder">
+                        <div class="item_show"></div>
+                        <div class="item_desp"></div>
+                    </div>
+                    <div class="list rightborder">
+                        <div class="item_show"></div>
+                        <div class="item_desp"></div>
+                    </div>
+                    <div class="list rightborder">
+                        <div class="item_show"></div>
+                        <div class="item_desp"></div>
+                    </div>
+                    <div class="list last">
+                        <div class="item_show"></div>
+                        <div class="item_desp"></div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- 尾部 -->
+        <div class="box1">
+            <div class="mt_bc w1200">
+                <h2>商品分类</h2>
+            </div>
+            <div class="categorys w1200 clearfix">
+                <ul class="category_ul">
+                    <li class="">
+                        <h3>
+                            <a href="">电视影音</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">冰洗空调</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">厨卫大电</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">厨房小电</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">生活电器</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">净化设备</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">手机数码</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">电脑外设</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">家具建材</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">家居家纺</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">食品酒水</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">保健健康</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">汽车用品</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">个护化妆</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">母婴玩具</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">服饰鞋包</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">钟表首饰</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">运动户外</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">生活服务</a>
+                        </h3>
+                    </li>
+                    <li class="">
+                        <h3>
+                            <a href="">教育</a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 更多精彩 -->
+        <div class="mt_bc w1200">
+            <h2>
+                更多精彩
+            </h2>
+        </div>
+        <div class="mb_cont mOfh">
+            <ul class="mb_presell clearfix">
+            </ul>
+        </div>
+        <!-- 图片 -->
+        <ul class="across mOfh">
+            <li>
+                <a href="">
+                    <img src="../img/T17.xvB_Av1RCvBVdK.webp" style="margin-left: 160px;">
+                </a>
+            </li>
+        </ul>
+        <!-- 品质 -->
+        <div id="gome-help">
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="icon-pz"></i>品质
+                    </a>
+                    <span class="foot-titlt-dot"></span>
+                    <a href="" class="sec-title">正品行货 购物无忧</a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="icon-dj"></i>低价
+                    </a>
+                    <span class="foot-titlt-dot"></span>
+                    <a href="" class="sec-title">普惠实价 帮你省钱</a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="icon-sd"></i>速达
+                    </a>
+                    <span class="foot-titlt-dot"></span>
+                    <a href="" class="sec-title">专业配送 按时按需</a>
+                </li>
+            </ul>
+            <div class="gome-help-box">
+                <dl>
+                    <dt>物流配送</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="">配送查询</a>
+                            </li>
+                            <li>
+                                <a href="">配送服务</a>
+                            </li>
+                            <li>
+                                <a href="">配送费用</a>
+                            </li>
+                            <li>
+                                <a href="">配送时效</a>
+                            </li>
+                            <li>
+                                <a href="">签收与验货</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付与账户</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="">货到付款</a>
+                            </li>
+                            <li>
+                                <a href="">在线支付</a>
+                            </li>
+                            <li>
+                                <a href="">分期付款</a>
+                            </li>
+                            <li>
+                                <a href="">门店支付</a>
+                            </li>
+                            <li>
+                                <a href="">发票制度</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="">退换货服务</a></li>
+                            <li><a href="">退款说明</a></li>
+                            <li><a href="">专业维修</a></li>
+                            <li><a href="">延保服务</a></li>
+                            <li><a href="">家电回收</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>会员专区</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="">会员介绍</a></li>
+                            <li><a href="">优惠券说明</a></li>
+                            <li><a href="">美豆说明</a></li>
+                            <li><a href="">商品评价</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>购物帮助</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="">购物保障</a></li>
+                            <li><a href="">购物流程</a></li>
+                            <li><a href="">促销优惠</a></li>
+                            <li><a href="">焦点问题</a></li>
+                            <li><a href="">联系我们</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!-- 底部信息 -->
+        <div class="container">
+            <div id="gome-foot" style="width: 100%;">
+                <div id="gome-foot-box">
+                    <span class="clearfix ">
+                        <i></i>
+                        <p>
+                            <strong>门店服务</strong>
+                            <a href="">国美门店全国共计2000余家</a>
+                        </p>
+                    </span>
+                    <span class="clearfix ued">
+                        <i></i>
+                        <p><strong>用户体验</strong>
+                            <a href="">参与用户体验改进计划</a>
+                            <a href="">用户反馈</a>
+                        </p>
+                    </span>
+                    <div class="qrcode-section">
+                        <em class="code-sm wx">
+                            <i></i>
+                            <p>公众号</p>
+                            <div>
+                                <img src="">
+                                <i class="icon-triangle"></i>
+                            </div>
+                        </em>
+                        <em class="code-sm wap">
+                            <i></i>
+                            <p>手机站点</p>
+                            <div>
+                                <img src="">
+                                <i class="icon-triangle"></i>
+                            </div>
+                        </em>
+                        <em class="code-bg app">
+                            <i>
+                                <a href="">
+                                    <img src="../img/T1sIDvB7hj1RCvBVdK.jpg">
+                                </a>
+
+                            </i>
+                            <p>扫描下载客户端</p>
+                        </em>
+                    </div>
+                    <ul>
+                        <li><a href="">国美集团</a>
+                        </li>
+                        <li><a href="">国美管家</a></li>
+                        <li><a href="">关于国美</a></li>
+                        <li><a href="">加入我们</a></li>
+                        <li>|</li>
+                        <li><a href="">品牌大全</a></li>
+                        <li><a href="">商品专题</a></li>
+                        <li><a href="">商品词</a></li>
+                        <li><a href="">热词搜索</a></li>
+                        <li><a href="">友情链接</a></li>
+                        <li><a href="">风险监测</a></li>
+                        <li>|</li>
+                        <li><a href="">销售联盟</a></li>
+                        <li><a href="">商家入驻</a></li>
+                        <li><a href="">广告营销</a></li>
+                    </ul>
+                    <p>本公司游戏产品适合18岁以上成年人使用&nbsp;&nbsp;违法和不良信息举报电话：021-39900132&nbsp;&nbsp;
+                        <a class="interDrug" href="">互联网药品信息服务资格证编号（沪）-经营性-2019-0006</a>
+                    </p>
+                    <p>网络食品销售第三方平台提供者备案：沪网食备A0015号&nbsp;&nbsp;
+                        <a class="interDrug" href="">网络文化经营许可证沪网文[2017]5537-436号</a>&nbsp;&nbsp;
+                        <a class="interDrug" href="">增值电信业务经营许可证</a>
+                    </p>
+                    <p>客服电话:4008113333&nbsp;&nbsp;
+                        <a class="interDrug" href="">沪ICP备11009419号/京ICP备 19011786号</a>&nbsp;&nbsp;
+                        <a class="interDrug" href="">京B2-20191290</a>&nbsp;&nbsp;
+                        <a class="interDrug" href="">经营执照</a>&nbsp;&nbsp;
+                        <a class="interDrug" href="">营业执照</a>&nbsp;&nbsp;
+                        <a class="interDrug" href="">出版物经营许可证</a>
+                    </p>
+                    <p>©2000-2019&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;
+                        <a class="interDrug" href="">京公网安备11010502038379号</a>
+                    </p>
+                    <div class="gome-foot-credit">
+                        <a class="credit-baxx" href="">
+                            <i></i>
+                            <b>经营性网站备案信息</b>
+                        </a>
+                        <a class="credit-xypj" href="" rel="nofollow">
+                            <i></i>
+                            <b>可信网站信用评价</b>
+                        </a>
+                        <a class="credit-cxwz" href="">
+                            <i></i>
+                            <b>诚信网站</b>
+                        </a>
+                        <a class="credit-hdjc" href="">
+                            <i></i>
+                            <b>朝阳网络警察</b>
+                        </a>
+                        <a class="credit-wgdj" href="">
+                            <i></i>
+                            <b>网购大家评</b>
+                        </a>
+                        <a class="credit-report" href="">
+                            <i></i>
+                            <b>上海市互联网违法和不良信息举报中心</b>
+                        </a>
+                    </div>
+                    <em class="turst-gome"></em>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../js/original.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/Magnifier5.js"></script>
+<script src="../js/good.js"></script>
+
+<script>
+
+</script>
+
+</html>
